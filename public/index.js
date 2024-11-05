@@ -1,4 +1,5 @@
-require("dotenv").config();
+const baseUrl = window.location.origin;
+
 window.addEventListener('DOMContentLoaded', () => { 
   
 
@@ -23,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const userMessage = { role: "user", content: userInput };
     try {
         const response = await fetch(
-        `${process.env.REACT_APP_API_BASE_URL}/api/chat`,
+        `${baseUrl}/api/chat`,
         {
           method: "POST",
           headers: {
