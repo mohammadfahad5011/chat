@@ -1,3 +1,4 @@
+require("dotenv").config();
 window.addEventListener('DOMContentLoaded', () => { 
   
 
