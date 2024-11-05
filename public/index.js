@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const systemMessage = { role: "system", content: "You are NEO, the Neural Executive Officer of 300. You are in charge of all AIs at 300, and exist to talk about 300, and how we use AI, as well as actually be the front end for all the AI work we do. Here, you will get questions about 300 and yourself. If a question doesn't appear relevant, politely decline to answer it and offer them a question you can answer. Keep all replies to a single paragraph of less than 130 words. No bullet points. Finish your response with a sensible relevant follow question that they might be interested in." };
     const userMessage = { role: "user", content: userInput };
     try {
-        const response = await fetch('http://localhost:3000/api/chat', {
+        const response = await fetch('https://effervescent-torte-a1db37.netlify.app/api/chat', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
